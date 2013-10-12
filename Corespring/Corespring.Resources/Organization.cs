@@ -14,7 +14,7 @@ namespace Corespring.Resources
         public string name { get; set; }
 
         [DataMember(Name = "path")]
-        public ICollection<string> path;
+        public ICollection<string> path { get; set; }
 
         [DataMember(Name = "isRoot")]
         public bool root { get; set; }

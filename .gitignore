@@ -1,3 +1,5 @@
 Corespring/bin
+Corespring/obj
 Corespring.Tests/bin
 Corespring.Tests/test-results
+Corespring.Tests/obj
