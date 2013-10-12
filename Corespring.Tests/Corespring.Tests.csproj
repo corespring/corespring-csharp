@@ -33,9 +33,11 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Corespring.Resources\" />
+    <Folder Include="Corespring.Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Corespring.Resources\OrganizationTest.cs" />
+    <Compile Include="Corespring.Authentication\AccessTokenProviderTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Corespring\Corespring.csproj">

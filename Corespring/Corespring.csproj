@@ -33,11 +33,20 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Corespring.Resources\" />
+    <Folder Include="Corespring.Rest\" />
+    <Folder Include="Corespring.Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Corespring.Resources\Organization.cs" />
+    <Compile Include="Corespring.Rest\CorespringRestClient.cs" />
+    <Compile Include="Corespring.Authentication\AccessTokenProvider.cs" />
+    <Compile Include="Corespring.Authentication\AccessTokenRequest.cs" />
+    <Compile Include="Corespring.Authentication\AccessTokenResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Net" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
 </Project>
