@@ -3,12 +3,10 @@
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
+        <State expanded="True" selected="True">
           <Node name="Corespring" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="Corespring.Resources" expanded="True">
-              <Node name="Organization.cs" selected="True" />
-            </Node>
+            <Node name="Corespring.Resources" expanded="True" />
           </Node>
           <Node name="Corespring.Tests" expanded="True">
             <Node name="References" expanded="True" />
