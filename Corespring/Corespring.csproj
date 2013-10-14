@@ -42,11 +42,17 @@
     <Compile Include="Corespring.Authentication\AccessTokenProvider.cs" />
     <Compile Include="Corespring.Authentication\AccessTokenRequest.cs" />
     <Compile Include="Corespring.Authentication\AccessTokenResponse.cs" />
+    <Compile Include="Corespring.Rest\CorespringRestResponse.cs" />
+    <Compile Include="Corespring.Rest\CorespringRestException.cs" />
+    <Compile Include="Corespring.Resources\Error.cs" />
+    <Compile Include="CorespringClient.cs" />
+    <Compile Include="Corespring.Resources\CorespringResource.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Net" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
   </ItemGroup>
 </Project>

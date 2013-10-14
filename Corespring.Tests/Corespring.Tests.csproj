@@ -34,10 +34,12 @@
   <ItemGroup>
     <Folder Include="Corespring.Resources\" />
     <Folder Include="Corespring.Authentication\" />
+    <Folder Include="Corespring.Rest\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Corespring.Resources\OrganizationTest.cs" />
     <Compile Include="Corespring.Authentication\AccessTokenProviderTest.cs" />
+    <Compile Include="Corespring.Rest\CorespringRestClientTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Corespring\Corespring.csproj">

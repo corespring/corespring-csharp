@@ -1,12 +1,16 @@
 using System;
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using Corespring.Rest;
 
 namespace Corespring.Resources
 {
+
     [DataContract]
-    public class Organization
+    public class Organization : CorespringResource
     {
+        private const string resourceRoute = "organizations";
+
         [DataMember(Name = "id")]
         public string id { get; set; }
 
@@ -25,6 +29,11 @@ namespace Corespring.Resources
             this.name = name;
             this.path = path;
             this.root = root;
+        }
+
+        public static string getResourceRoute(CorespringRestClient client)
+        {
+            return client.baseUrl() + resourceRoute;
         }
     }
 }
