@@ -6,6 +6,21 @@ using Corespring.Rest;
 namespace Corespring.Resources
 {
 
+    /**
+     * A CoreSpring Organization represents a development partner utilizing the CoreSpring platform. NOTE:
+     * Organizations do not map to groups within educational institutions (districts, schools, etc.). The following JSON
+     * structure describes a typical Organization:
+     *
+     * <pre>
+     *
+     *   {
+     *     "id" : "51114b307fc1eaa866444648",
+     *     "name" : "Demo Organization"
+     *   }
+     *
+     * </pre>
+     *
+     */
     [DataContract]
     public class Organization : CorespringResource
     {
