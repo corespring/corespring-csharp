@@ -2,6 +2,8 @@
 
 ## corespring-csharp
 
+[![Build Status](https://travis-ci.org/corespring/corespring-csharp.png)](https://travis-ci.org/corespring/corespring-csharp)
+
 Corespring-csharp is a C# library designed for interfacing with the CoreSpring REST API.
 
 **DISCLAIMER**: This library is in an alpha state, and should not yet be used in production code!
