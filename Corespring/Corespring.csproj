@@ -47,6 +47,9 @@
     <Compile Include="Corespring.Resources\Error.cs" />
     <Compile Include="CorespringClient.cs" />
     <Compile Include="Corespring.Resources\CorespringResource.cs" />
+    <Compile Include="Corespring.Authentication\IAccessTokenProvider.cs" />
+    <Compile Include="Corespring.Rest\ICorespringWebService.cs" />
+    <Compile Include="Corespring.Rest\CorespringWebService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />

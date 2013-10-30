@@ -25,7 +25,8 @@ namespace Corespring.Rest
         private string endpoint = "http://www.corespring.org";
 
         private string accessToken;
-        private AccessTokenProvider accessTokenProvider = new AccessTokenProvider();
+        private IAccessTokenProvider accessTokenProvider = new AccessTokenProvider();
+        private ICorespringWebService corespringWebService = new CorespringWebService();
 
         public CorespringRestClient(string clientId, string clientSecret)
         {
@@ -58,8 +59,8 @@ namespace Corespring.Rest
 
         private CorespringRestResponse tryRequest(HttpWebRequest request)
         {
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            string responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+            Stream responseStream = corespringWebService.processRequest(request);
+            string responseString = new StreamReader(responseStream).ReadToEnd();
             return new CorespringRestResponse(request.RequestUri.ToString(), responseString, 200);
         }
 
@@ -94,9 +95,19 @@ namespace Corespring.Rest
             return queryBuilder.ToString();
         }
 
-        private AccessTokenProvider getAccessTokenProvider()
+        private IAccessTokenProvider getAccessTokenProvider()
         {
             return accessTokenProvider;
+        }
+
+        public void setAccessTokenProvider(IAccessTokenProvider accessTokenProvider)
+        {
+            this.accessTokenProvider = accessTokenProvider;
+        }
+
+        public void setCorespringWebService(ICorespringWebService corespringWebService)
+        {
+            this.corespringWebService = corespringWebService;
         }
 
         public string baseUrl()

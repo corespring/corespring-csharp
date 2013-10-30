@@ -1,7 +1,7 @@
 using System;
 using Corespring.Rest;
-using System.Collections.Generic;
 using Corespring.Resources;
+using System.Collections.Generic;
 
 namespace Corespring
 {
@@ -11,7 +11,7 @@ namespace Corespring
         {
         }
 
-        public ICollection<Organization> getOrganizations()
+        public List<Organization> getOrganizations()
         {
             CorespringRestResponse response = base.get(Organization.getResourceRoute(this));
             return response.GetAll<Organization>();

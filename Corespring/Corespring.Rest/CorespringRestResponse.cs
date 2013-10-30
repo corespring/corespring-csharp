@@ -3,6 +3,7 @@ using System.Runtime.Serialization.Json;
 using Corespring.Resources;
 using System.IO;
 using System.Text;
+using System.Collections.ObjectModel;
 using System.Collections.Generic;
 
 namespace Corespring.Rest
@@ -41,10 +42,10 @@ namespace Corespring.Rest
             return fromJson;
         }
 
-        public ICollection<T> GetAll<T>() {
+        public List<T> GetAll<T>() {
             DataContractJsonSerializer deserializer = new DataContractJsonSerializer(typeof(List<T>));
             MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(this.responseText));
-            ICollection<T> fromJson = (List<T>)deserializer.ReadObject(stream);
+            List<T> fromJson = (List<T>)deserializer.ReadObject(stream);
             stream.Close();
             return fromJson;
         }

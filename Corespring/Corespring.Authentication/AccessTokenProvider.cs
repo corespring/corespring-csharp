@@ -13,7 +13,7 @@ namespace Corespring.Authentication
      * Note: You will be issued a client id and client secret when you sign up for a developer account at
      * http://www.corespring.org/signup
      */
-    public class AccessTokenProvider
+    public class AccessTokenProvider : IAccessTokenProvider
     {
         private const string accessTokenRoute = "/auth/access_token";
 
@@ -46,7 +46,7 @@ namespace Corespring.Authentication
 
             using (Stream httpStream = post.GetRequestStream())
             {
-                httpStream.Write(data,0,data.Length);
+                httpStream.Write(data, 0, data.Length);
             }
 
             HttpWebResponse response = (HttpWebResponse)post.GetResponse();

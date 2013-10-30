@@ -1,21 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Corespring/Corespring.Rest/CorespringRestClient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Corespring.Tests/Corespring.Rest/CorespringRestClientTest.cs">
     <Files>
-      <File FileName="Corespring/Corespring.Rest/CorespringRestClient.cs" Line="60" Column="57" />
+      <File FileName="Corespring.Tests/Corespring.Rest/CorespringRestClientTest.cs" Line="20" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Corespring" expanded="True">
+            <Node name="References" expanded="True" />
             <Node name="Corespring.Authentication" expanded="True" />
             <Node name="Corespring.Resources" expanded="True" />
-            <Node name="Corespring.Rest" expanded="True">
-              <Node name="CorespringRestClient.cs" selected="True" />
-            </Node>
+            <Node name="Corespring.Rest" expanded="True" />
           </Node>
           <Node name="Corespring.Tests" expanded="True">
-            <Node name="Corespring.Authentication" expanded="True" />
+            <Node name="References" expanded="True" />
             <Node name="Corespring.Resources" expanded="True" />
             <Node name="Corespring.Rest" expanded="True" />
           </Node>
