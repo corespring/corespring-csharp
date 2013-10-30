@@ -4,9 +4,11 @@
 
 Corespring-csharp is a C# library designed for interfacing with the CoreSpring REST API.
 
+**DISCLAIMER**: This library is in an alpha state, and should not yet be used in production code!
+
 ### Setup
 
-Interestingly, corespring-csharp has only been officially run/tested on OS X using Mono
+Interestingly, corespring-csharp has only been officially run/tested on OS X using Mono.
 
 #### OS X
 
